@@ -406,6 +406,7 @@ export interface ApiRestaurantRestaurant extends Schema.CollectionType {
   };
   options: {
     draftAndPublish: true;
+    populateCreatorFields: true;
   };
   attributes: {
     Name: Attribute.String & Attribute.Required & Attribute.Unique;
