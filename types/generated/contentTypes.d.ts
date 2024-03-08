@@ -423,14 +423,12 @@ export interface ApiRestaurantRestaurant extends Schema.CollectionType {
       'api::restaurant.restaurant',
       'oneToOne',
       'admin::user'
-    > &
-      Attribute.Private;
+    >;
     updatedBy: Attribute.Relation<
       'api::restaurant.restaurant',
       'oneToOne',
       'admin::user'
-    > &
-      Attribute.Private;
+    >;
   };
 }
 
