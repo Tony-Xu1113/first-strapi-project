@@ -9,7 +9,7 @@ module.exports = createCoreController('api::restaurant.restaurant', ({ strapi })
   async find(ctx) {
     // Calling the default core action
     const { data, meta } = await super.find(ctx);
-    const query = strapi.db.query('api::[collection-name].[collection-name]');
+    const query = strapi.db.query('api::restaurant.restaurant');
     await Promise.all(
       data.map(async (item, index) => {
         const foundItem = await query.findOne({
